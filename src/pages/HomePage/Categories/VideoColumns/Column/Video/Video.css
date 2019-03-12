@@ -1,0 +1,65 @@
+
+@keyframes full-visible {
+  from {
+    opacity: 0.5;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.col {
+  position: relative;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.wrapper {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  opacity: 1;
+}
+
+.wrapper-img {
+  height: 100%;
+  object-fit: cover;
+  width: 33.3333vw;
+  position: relative;
+  left: 0;
+  right: 0;
+  transition: opacity 0.5s;
+}
+
+.wide {
+  width: 100vw;
+}
+
+.iePreview {
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  width: 33.33vw;
+}
+
+.hover {
+    opacity: 1;
+    transition: opacity 0.5s;
+    transition-delay: 100ms;
+}
+
+.img {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  opacity: 1;
+  transition: opacity 0.5s;
+
+}
+
+.hide {
+  opacity: 0;
+}

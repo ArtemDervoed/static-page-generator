@@ -1,0 +1,38 @@
+:global {
+  body {
+    background-color: #191919;
+    -webkit-overflow-scrolling: touch;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  .no-scroll-overflow {
+    overflow: hidden;
+  }
+
+  .fixed-top {
+    position: fixed;
+    top: 0;
+  }
+}
+
+:global(.no-scroll) {
+  overflow: hidden;
+  position: fixed;
+}
+
+:global(.route-enter-active) {
+  height: 0;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  pointer-events: none;
+  // z-index: 100;
+}
+
+:global(.route-exit) {
+  position: relative;
+  z-index: 101;
+}

@@ -1,0 +1,14 @@
+.root {
+  width: 100vw;
+}
+
+.landscape {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.portrait {
+  display: flex;
+  flex-direction: column;
+}

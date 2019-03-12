@@ -1,0 +1,34 @@
+.root {
+  position: relative;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+.landscape {
+  position: absolute;
+  overflow: hidden;
+}
+
+.portrait {
+  position: absolute;
+}
+
+.catogories,
+.mask {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+ .mask,
+ .columns {
+  pointer-events: none;
+}
+
+ .mask {
+   position: absolute;
+   z-index: 52;
+   overflow: hidden;
+ }

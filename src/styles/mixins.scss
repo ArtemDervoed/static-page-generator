@@ -1,0 +1,19 @@
+@import '~styles/variables.scss';
+
+@mixin respondTo($media) {
+  @if $media == bp1024 {
+    @media (max-width: $breakpoint-1024) { @content; }
+  }
+
+  @else if $media == bp768 {
+    @media (max-width: $breakpoint-768) { @content; }
+  }
+
+  @else if $media == bp540 {
+    @media (max-width: $breakpoint-540) { @content; }
+  }
+
+  @else if $media == bp380 {
+    @media (max-width: $breakpoint-380) { @content; }
+  }
+}
